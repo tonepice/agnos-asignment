@@ -3,7 +3,7 @@
 An interactive, real-time patient form and staff monitoring web application built for the **Agnos Candidate Assignment**.
 
 > 📌 **Developer Implementation Notes (ขั้นตอนการทำภาษาไทย):**  
-> สามารถอ่านแนวคิดขั้นตอนการพัฒนา, สถาปัตยกรรมระบบ (Architecture Diagram), และเหตุผลในการเลือกเทคโนโลยีเพิ่มเติมได้ที่ [README_STEP.MD](./README_STEP.MD)
+> สามารถอ่านแนวคิดขั้นตอนการพัฒนา, สถาปัตยกรรมระบบ (Architecture Diagram), และเหตุผลในการเลือกเทคโนโลยีเพิ่มเติมได้ที่ [README_STEP.MD](./README_STEP.md)
 
 ---
 
