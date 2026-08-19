@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "patientForm": "แบบฟอร์มผู้ป่วย",
+    "staffView": "หน้าจอเจ้าหน้าที่",
+    "home": "หน้าแรก"
+  },
+  "home": {
+    "badge": "Agnos Candidate Assignment",
+    "title": "ระบบลงทะเบียนผู้ป่วยและติดตามข้อมูลเรียลไทม์",
+    "subtitle": "Real-time Patient Input Form & Staff View Synchronization",
+    "patientButton": "ไปที่แบบฟอร์มผู้ป่วย (Patient Form)",
+    "staffButton": "ไปที่หน้าจอเจ้าหน้าที่ (Staff View)"
+  },
+  "patientForm": {
+    "title": "แบบฟอร์มลงทะเบียนผู้ป่วย",
+    "subtitle": "กรุณากรอกข้อมูลส่วนตัวของผู้ป่วย ข้อมูลจะถูกแสดงผลสดไปยังเจ้าหน้าที่ทันที",
+    "firstName": "ชื่อจริง (First Name) *",
+    "middleName": "ชื่อกลาง (Middle Name)",
+    "lastName": "นามสกุล (Last Name) *",
+    "dob": "วันเกิด (Date of Birth) *",
+    "gender": "เพศ (Gender) *",
+    "selectGender": "-- เลือกเพศ --",
+    "male": "ชาย (Male)",
+    "female": "หญิง (Female)",
+    "other": "อื่นๆ (Other)",
+    "phone": "เบอร์โทรศัพท์ (Phone Number) *",
+    "email": "อีเมล (Email) *",
+    "address": "ที่อยู่ (Address) *",
+    "language": "ภาษาหลักที่สะดวก (Preferred Language) *",
+    "nationality": "สัญชาติ (Nationality) *",
+    "emergencyContact": "ผู้ติดต่อฉุกเฉิน (Emergency Contact)",
+    "emergencyName": "ชื่อผู้ติดต่อฉุกเฉิน",
+    "emergencyRelation": "ความสัมพันธ์",
+    "emergencyPhone": "เบอร์โทรศัพท์ฉุกเฉิน",
+    "religion": "ศาสนา (Religion)",
+    "submit": "บันทึกและส่งข้อมูล",
+    "submittedAlert": "ส่งข้อมูลผู้ป่วยสำเร็จ!"
+  },
+  "staffView": {
+    "title": "Staff View (Real-time Preview)",
+    "subtitle": "การติดตามข้อมูลผู้ป่วยแบบเรียลไทม์ขณะผู้ป่วยกำลังกรอกข้อมูล",
+    "statusIdle": "⏳ รอดำเนินการ",
+    "statusFilling": "✍️ กำลังกรอกข้อมูล",
+    "statusSubmitted": "✅ ส่งข้อมูลเรียบร้อย",
+    "noData": "ยังไม่มีข้อมูลจากแบบฟอร์มผู้ป่วยในขณะนี้...",
+    "patientInfo": "ข้อมูลผู้ป่วยที่รับส่งแบบ Real-time",
+    "fullName": "ชื่อ-นามสกุล",
+    "dobGender": "วันเกิด / เพศ",
+    "phone": "เบอร์โทรศัพท์",
+    "email": "อีเมล",
+    "address": "ที่อยู่",
+    "prefLang": "ภาษาหลัก",
+    "nationality": "สัญชาติ",
+    "emergency": "ผู้ติดต่อฉุกเฉิน",
+    "religion": "ศาสนา",
+    "lastUpdated": "อัปเดตล่าสุด"
+  }
+}

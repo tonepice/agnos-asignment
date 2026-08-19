@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "patientForm": "Patient Form",
+    "staffView": "Staff View",
+    "home": "Home"
+  },
+  "home": {
+    "badge": "Agnos Candidate Assignment",
+    "title": "Real-time Patient Input & Staff View System",
+    "subtitle": "Synchronize patient details with staff interface instantly as they type",
+    "patientButton": "Go to Patient Form",
+    "staffButton": "Go to Staff View"
+  },
+  "patientForm": {
+    "title": "Patient Registration Form",
+    "subtitle": "Please enter patient personal details. Data will sync in real-time to staff view.",
+    "firstName": "First Name *",
+    "middleName": "Middle Name (Optional)",
+    "lastName": "Last Name *",
+    "dob": "Date of Birth *",
+    "gender": "Gender *",
+    "selectGender": "-- Select Gender --",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "phone": "Phone Number *",
+    "email": "Email *",
+    "address": "Address *",
+    "language": "Preferred Language *",
+    "nationality": "Nationality *",
+    "emergencyContact": "Emergency Contact (Optional)",
+    "emergencyName": "Emergency Contact Name",
+    "emergencyRelation": "Relationship",
+    "emergencyPhone": "Emergency Phone",
+    "religion": "Religion (Optional)",
+    "submit": "Submit Patient Form",
+    "submittedAlert": "Patient form submitted successfully!"
+  },
+  "staffView": {
+    "title": "Staff View (Real-time Preview)",
+    "subtitle": "Real-time live monitoring of patient form input via Supabase Realtime Broadcast",
+    "statusIdle": "⏳ Waiting for input",
+    "statusFilling": "✍️ Patient is typing...",
+    "statusSubmitted": "✅ Submitted",
+    "noData": "No patient form data received yet...",
+    "patientInfo": "Real-time Patient Data Feed",
+    "fullName": "Full Name",
+    "dobGender": "Date of Birth / Gender",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "address": "Address",
+    "prefLang": "Preferred Language",
+    "nationality": "Nationality",
+    "emergency": "Emergency Contact",
+    "religion": "Religion",
+    "lastUpdated": "Last Updated"
+  }
+}

@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary_blue: rgb(26 89 194);
+  --color-primary_blue-hover: rgb(20 73 162);
+  --color-primary_blue-light: rgb(238 244 255);
+  --font-anuphan: 'Anuphan', sans-serif;
+  --breakpoint-md: 788px;
+}
+
+/* Local Font-face Fallback (เมื่อนำไฟล์ฟอนต์มาใส่ใน public/assets/fonts/) */
+@font-face {
+  font-family: 'Anuphan';
+  src: url('/assets/fonts/Anuphan-Regular.woff2') format('woff2'),
+       url('/assets/fonts/Anuphan-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-anuphan), 'Anuphan', sans-serif;
+    background-image: url('/assets/images/bg-image.png');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-position: top center;
+    @apply bg-zinc-50 text-zinc-900 antialiased min-h-screen;
+  }
+
+  /* Fluid Typography: ยืดหดตามขนาดจอ โดยหดได้สูงสุดไม่เกิน 20% (ขั้นต่ำ 80% ของขนาดเดิม) */
+  h1 {
+    font-size: clamp(2rem, 4vw + 1rem, 2.5rem);
+    line-height: 1.2;
+    @apply font-extrabold tracking-tight text-zinc-900 mb-2;
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 3.2vw + 0.8rem, 2rem);
+    line-height: 1.25;
+    @apply font-bold tracking-tight text-zinc-900 mb-2;
+  }
+
+  h3 {
+    font-size: clamp(1.2rem, 2.4vw + 0.6rem, 1.5rem);
+    line-height: 1.3;
+    @apply font-semibold tracking-tight text-zinc-900 mb-1;
+  }
+
+  p {
+    font-size: clamp(0.9rem, 1.5vw + 0.5rem, 1.125rem);
+    line-height: 1.6;
+  }
+}
+
+/* Keyframe Animations สำหรับ Mobile Menu & Dropdowns (ทั้งตอนเปิดและตอนปิด) */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+}
+
+@keyframes dropdownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes dropdownFadeExit {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.95);
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-dropdown {
+  animation: dropdownFade 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-dropdown-exit {
+  animation: dropdownFadeExit 0.16s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Agnos Theme Utilities */
+@utility text-primary_blue {
+  color: rgb(26 89 194 / var(--tw-text-opacity, 1));
+}
+
+@utility bg-primary_blue {
+  background-color: rgb(26 89 194 / var(--tw-bg-opacity, 1));
+}
+
+@utility border-primary_blue {
+  border-color: rgb(26 89 194 / var(--tw-border-opacity, 1));
+}
